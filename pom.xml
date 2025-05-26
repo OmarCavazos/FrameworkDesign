@@ -31,7 +31,12 @@
 		    <version>7.11.0</version>
 		    <scope>test</scope>
 		</dependency>
-		
+
+		<dependency>
+			<groupId>OmarCavazos</groupId>
+			<artifactId>Selenium-Java</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
   <build>

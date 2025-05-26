@@ -30,6 +30,11 @@ public class LandingPage extends AbstractComponent{
 
 	@FindBy(id = "login")
 	WebElement submit;
+	
+	//.ng-tns-c4-11.ng-star-inserted.ng-trigger.ng-trigger-flyInOut.ngx-toastr.toast-error
+	@FindBy(css = "[class*='flyInOut']")
+	WebElement errorMessage;
+	
 
 	public ProductCatalogue loginApplication(String email, String password) {
 		userEmail.sendKeys(email);
@@ -39,6 +44,11 @@ public class LandingPage extends AbstractComponent{
 		return productCatalogue;
 	}
 
+	public String getErrorMessage() {
+		waitForWebElementToAppear(errorMessage);
+		return errorMessage.getText();
+	}
+	
 	public void goTo() {
 		driver.get("https://rahulshettyacademy.com/client");
 	}

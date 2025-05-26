@@ -1,4 +1,4 @@
-package omarcavazos;
+package omarcavazos.tests;
 
 import java.time.Duration;
 import java.util.List;
@@ -8,18 +8,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import net.bytebuddy.agent.builder.AgentBuilder.RedefinitionStrategy.DiscoveryStrategy.Explicit;
-import omarcavazos.pageobjects.LandingPage;
-
 public class standAloneTest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		String productName = "ZARA COAT 3";
 		// call Firefox driver
 		WebDriver driver = new FirefoxDriver();
@@ -52,6 +47,7 @@ public class standAloneTest {
 		Boolean match = cartProducts.stream().anyMatch(cartProduct -> cartProduct.getText().equalsIgnoreCase(productName));
 		Assert.assertTrue(match);
 		
+		Thread.sleep(1000);
 		driver.findElement(By.cssSelector(".totalRow button")).click();
 		
 		Actions a = new Actions(driver);
