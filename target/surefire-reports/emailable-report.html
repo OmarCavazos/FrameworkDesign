@@ -9,28 +9,66 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Submit Order Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">7</td><td>ErrorHandling</td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Error Validations Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">15,805</td><td>ErrorHandling</td><td></td></tr>
-<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num attn">1</th><th class="num">15,812</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Error Validations Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">6</td><td>Purchase</td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Submit Order Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">27,318</td><td>Purchase</td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">27,324</th><th colspan="2"></th></tr>
 </table>
 <table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4" class="invisible"/></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Error Validations Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">omarcavazos.tests.ErrorValidationsTest</td><td><a href="#m0">LoginErrorValidation</a></td><td rowspan="1">1748395912500</td><td rowspan="1">546</td></tr><tr><th colspan="4">Error Validations Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">omarcavazos.tests.ErrorValidationsTest</td><td><a href="#m1">LoginErrorValidation</a></td><td rowspan="1">1748395905435</td><td rowspan="1">566</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Submit Order Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">omarcavazos.tests.SubmitOrderTest</td><td><a href="#m0">submitOrder</a></td><td rowspan="2">1748483087885</td><td rowspan="2">6974</td></tr><tr class="failedeven"><td><a href="#m1">submitOrder</a></td></tr></tbody>
 </table>
-<h2>Submit Order Test</h2><h2>Error Validations Test</h2><h3 id="m0">omarcavazos.tests.ErrorValidationsTest#LoginErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email password.]
-	at omarcavazos.tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:19)
+<h2>Error Validations Test</h2><h2>Submit Order Test</h2><h3 id="m0">omarcavazos.tests.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=@Test555, product=ADIDAS ORIGINAL, email=test555@test.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: Element &lt;button class=&quot;btn btn-custom&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [a2227d1a-df8f-436a-9ac2-6fa9acd6e0e2, clickElement {id=b80c7824-0708-4d08-86ec-b8bb2fc3ee12}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0, moz:accessibilityChecks: false, moz:buildID: 20250522210034, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 55768, moz:profile: C:\Users\omar_\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (a2227d1a-df8f-436a-9ac2-6fa9acd6e0e2)] -&gt; css selector: [routerlink*=&apos;cart&apos;]]
+Session ID: a2227d1a-df8f-436a-9ac2-6fa9acd6e0e2
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
+	at omarcavazos.AbstractComponents.AbstractComponent.goToCartPage(AbstractComponent.java:49)
+	at omarcavazos.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:30)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">omarcavazos.tests.ErrorValidationsTest#LoginErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email password.]
-	at omarcavazos.tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:19)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">omarcavazos.tests.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=@Test123, product=ZARA COAT 3, email=test969@test.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: Element &lt;button class=&quot;btn btn-custom&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f6342fbf-51f3-47e5-8657-780b1e166122, clickElement {id=d4f2725d-56b5-435f-9553-3775dff52503}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0, moz:accessibilityChecks: false, moz:buildID: 20250522210034, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 52732, moz:profile: C:\Users\omar_\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (f6342fbf-51f3-47e5-8657-780b1e166122)] -&gt; css selector: [routerlink*=&apos;cart&apos;]]
+Session ID: f6342fbf-51f3-47e5-8657-780b1e166122
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
+	at omarcavazos.AbstractComponents.AbstractComponent.goToCartPage(AbstractComponent.java:49)
+	at omarcavazos.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:30)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\omar_\eclipse-workspace\SeleniumFrameworkDesign\testSuites\testng.xml</span>
+                    <span>C:\Users\omar_\eclipse-workspace\SeleniumFrameworkDesign\testSuites\Purchase.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,26 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  2 skipped,  </span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="omarcavazos.tests.ErrorValidationsTest" class="method navigator-link" hash-for-method="LoginErrorValidation">LoginErrorValidation</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="omarcavazos.tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrder({password=@Test123, product=ZARA COAT 3, email=test969@test.com})">submitOrder({password=@Test123, product=ZARA COAT 3, email=test969@test.com})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="omarcavazos.tests.ErrorValidationsTest" class="method navigator-link" hash-for-method="ProductErrorValidation">ProductErrorValidation</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="omarcavazos.tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrder({password=Iamking@000, product=ADIDAS ORIGINAL, email=shetty@gmail.com})">submitOrder({password=Iamking@000, product=ADIDAS ORIGINAL, email=shetty@gmail.com})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -123,65 +123,50 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">omarcavazos.tests.ErrorValidationsTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">omarcavazos.tests.SubmitOrderTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginErrorValidation">
-                  </a> <!-- LoginErrorValidation -->
-                  <span class="method-name">LoginErrorValidation</span>
-                  <div class="stack-trace">java.lang.Error: Unresolved compilation problem: 
-	WebDriverManager cannot be resolved
-
-	at omarcavazos.TestComponents.BaseTest.initializeDriver(BaseTest.java:43)
-	at omarcavazos.TestComponents.BaseTest.launchApplication(BaseTest.java:79)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 19 stack frames
-</div> <!-- stack-trace -->
+                  <a name="submitOrder({password=@Test123, product=ZARA COAT 3, email=test969@test.com})">
+                  </a> <!-- submitOrder({password=@Test123, product=ZARA COAT 3, email=test969@test.com}) -->
+                  <span class="method-name">submitOrder</span>
+                  <span class="parameters">({password=@Test123, product=ZARA COAT 3, email=test969@test.com})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="ProductErrorValidation">
-                  </a> <!-- ProductErrorValidation -->
-                  <span class="method-name">ProductErrorValidation</span>
-                  <div class="stack-trace">java.lang.Error: Unresolved compilation problem: 
-	WebDriverManager cannot be resolved
-
-	at omarcavazos.TestComponents.BaseTest.initializeDriver(BaseTest.java:43)
-	at omarcavazos.TestComponents.BaseTest.launchApplication(BaseTest.java:79)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 19 stack frames
-</div> <!-- stack-trace -->
+                  <a name="submitOrder({password=Iamking@000, product=ADIDAS ORIGINAL, email=shetty@gmail.com})">
+                  </a> <!-- submitOrder({password=Iamking@000, product=ADIDAS ORIGINAL, email=shetty@gmail.com}) -->
+                  <span class="method-name">submitOrder</span>
+                  <span class="parameters">({password=Iamking@000, product=ADIDAS ORIGINAL, email=shetty@gmail.com})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\omar_\eclipse-workspace\SeleniumFrameworkDesign\testSuites\testng.xml</span>
+            <span class="header-content">C:\Users\omar_\eclipse-workspace\SeleniumFrameworkDesign\testSuites\Purchase.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;omarcavazos.TestComponents.Listeners&quot;/&gt;
-  &lt;/listeners&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;Purchase&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;Purchase&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Submit Order Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;omarcavazos.tests.SubmitOrderTest&quot;/&gt;
@@ -217,10 +202,10 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">ErrorHandling</span>
+              <span class="test-group-name">Purchase</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">LoginErrorValidation</span>
+                <span class="method-in-group-name">submitOrder</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -242,18 +227,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ProductErrorValidation')
-data.setCell(0, 2, 'omarcavazos.tests.ErrorValidationsTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'submitOrder')
+data.setCell(0, 2, 'omarcavazos.tests.SubmitOrderTest')
+data.setCell(0, 3, 6893);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LoginErrorValidation')
-data.setCell(1, 2, 'omarcavazos.tests.ErrorValidationsTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'submitOrder')
+data.setCell(1, 2, 'omarcavazos.tests.SubmitOrderTest')
+data.setCell(1, 3, 6827);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 72 ms</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -268,9 +253,25 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">omarcavazos.tests.ErrorValidationsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">ProductErrorValidation</span>
+                <br/>
+                <span class="ignored-method-name">LoginErrorValidation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">omarcavazos.tests.SubmitOrderTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">OrderHistoryTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -279,30 +280,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">omarcavazos.tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">omarcavazos.tests.SubmitOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">launchApplication</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">submitOrder({password=@Test123, product=ZARA COAT 3, email=test969@test.com})</span>
+                <span class="method-start">7167 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20 ms</span>
+                <span class="method-start">14062 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">14811 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">submitOrder({password=Iamking@000, product=ADIDAS ORIGINAL, email=shetty@gmail.com})</span>
+                <span class="method-start">21152 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">35 ms</span>
+                <span class="method-start">27980 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

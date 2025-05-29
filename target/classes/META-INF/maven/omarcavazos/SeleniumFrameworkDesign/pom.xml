@@ -43,7 +43,7 @@
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>5.2.1</version>
+			<version>5.8.0</version>
 		</dependency>
 
 		<!--
@@ -166,10 +166,10 @@
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.13.0</version>
 				</plugin>
-				<plugin>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>3.3.0</version>
-				</plugin>
+<!--				<plugin>-->
+<!--					<artifactId>maven-surefire-plugin</artifactId>-->
+<!--					<version>3.3.0</version>-->
+<!--				</plugin>-->
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>
 					<version>3.4.2</version>

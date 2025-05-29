@@ -10,12 +10,15 @@ import java.util.List;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -37,20 +40,39 @@ public class BaseTest {
 		FileInputStream fis = new FileInputStream(
 				System.getProperty("user.dir") + "\\src\\main\\java\\omarcavazos\\resources\\GlobalData.properties");
 		prop.load(fis);
-		String browserName = prop.getProperty("browser");
+		
+		String browserName = System.getProperty("browser")!=null ? System.getProperty("browser"): prop.getProperty("browser");		
+		//String browserName = prop.getProperty("browser");
 
-		if (browserName.equalsIgnoreCase("Firefox")) {
+		if (browserName.toLowerCase().contains("firefox")) {
+			//System.setProperty("webdriver.gecko.driver", "C:\\Users\\omar_\\Downloads\\geckodriver");
+			FirefoxOptions firefoxOptions = new FirefoxOptions();
+			if (browserName.toLowerCase().contains("headless")) {
+		        firefoxOptions.addArguments("--headless");
+		    }		
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
-		} else if (browserName.equalsIgnoreCase("Chrome")) {
-			driver = new ChromeDriver();
+			driver = new FirefoxDriver(firefoxOptions);
+			
+		} else if (browserName.toLowerCase().contains("chrome")) {
+			//System.setProperty("WebDriverManager.chromedriver().driver", "C:\\Users\\omar_\\Downloads\\chromedriver-win64");
+			// run Chrome on background
+			ChromeOptions chromeOptions = new ChromeOptions();
+			 if (browserName.toLowerCase().contains("headless")) {
+			        chromeOptions.addArguments("--headless");
+			    }		
+			
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver(chromeOptions);
+			driver.manage().window().setSize(new Dimension(1920, 1080));
 
-		} else if (browserName.equalsIgnoreCase("Edge")) {
+		} else if (browserName.equalsIgnoreCase("edge")) {
+			//System.setProperty("WebDriverManager.chromedriver().driver", "C:\\Users\\omar_\\Downloads\\msedgedriver");
+			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		}
-
-		driver.manage().window().maximize();
+		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().window().maximize();
 
 		return driver;
 	}

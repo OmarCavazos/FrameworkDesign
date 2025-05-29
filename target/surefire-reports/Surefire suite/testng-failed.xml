@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)" verbose="0">
-    <groups>
-      <run>
-        <include name="Purchase"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
       <class name="omarcavazos.tests.SubmitOrderTest">
         <methods>
           <include name="tearDown"/>
           <include name="launchApplication"/>
           <include name="submitOrder" invocation-numbers="0 1"/>
+          <include name="OrderHistoryTest"/>
         </methods>
       </class> <!-- omarcavazos.tests.SubmitOrderTest -->
     </classes>
-  </test> <!-- Submit Order Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

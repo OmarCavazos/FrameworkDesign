@@ -9,69 +9,14 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Error Validations Test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">72</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Error Validations Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9</td><td>Purchase</td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Submit Order Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">28,878</td><td>Purchase</td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">28,887</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Error Validations Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="4">omarcavazos.tests.ErrorValidationsTest</td><td><a href="#m0">launchApplication</a></td><td rowspan="2">1748395124162</td><td rowspan="2">6</td></tr><tr class="failedeven"><td><a href="#m1">launchApplication</a></td></tr><tr class="failedeven"><td><a href="#m2">tearDown</a></td><td rowspan="2">1748395124197</td><td rowspan="2">2</td></tr><tr class="failedeven"><td><a href="#m3">tearDown</a></td></tr><tr><th colspan="4">Error Validations Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">omarcavazos.tests.ErrorValidationsTest</td><td><a href="#m4">LoginErrorValidation</a></td><td rowspan="1">1748395124177</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">ProductErrorValidation</a></td><td rowspan="1">1748395124192</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4" class="invisible"/></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Submit Order Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">omarcavazos.tests.SubmitOrderTest</td><td><a href="#m0">submitOrder</a></td><td rowspan="2">1748478632007</td><td rowspan="2">6893</td></tr><tr class="passedeven"><td><a href="#m1">submitOrder</a></td></tr></tbody>
 </table>
-<h2>Error Validations Test</h2><h3 id="m0">omarcavazos.tests.ErrorValidationsTest#launchApplication</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Error: Unresolved compilation problem: 
-	WebDriverManager cannot be resolved
-
-	at omarcavazos.TestComponents.BaseTest.initializeDriver(BaseTest.java:43)
-	at omarcavazos.TestComponents.BaseTest.launchApplication(BaseTest.java:79)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">omarcavazos.tests.ErrorValidationsTest#launchApplication</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Error: Unresolved compilation problem: 
-	WebDriverManager cannot be resolved
-
-	at omarcavazos.TestComponents.BaseTest.initializeDriver(BaseTest.java:43)
-	at omarcavazos.TestComponents.BaseTest.launchApplication(BaseTest.java:79)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">omarcavazos.tests.ErrorValidationsTest#tearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;this.driver&quot; is null
-	at omarcavazos.TestComponents.BaseTest.tearDown(BaseTest.java:89)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">omarcavazos.tests.ErrorValidationsTest#tearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;this.driver&quot; is null
-	at omarcavazos.TestComponents.BaseTest.tearDown(BaseTest.java:89)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">omarcavazos.tests.ErrorValidationsTest#LoginErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Error: Unresolved compilation problem: 
-	WebDriverManager cannot be resolved
-
-	at omarcavazos.TestComponents.BaseTest.initializeDriver(BaseTest.java:43)
-	at omarcavazos.TestComponents.BaseTest.launchApplication(BaseTest.java:79)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">omarcavazos.tests.ErrorValidationsTest#ProductErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Error: Unresolved compilation problem: 
-	WebDriverManager cannot be resolved
-
-	at omarcavazos.TestComponents.BaseTest.initializeDriver(BaseTest.java:43)
-	at omarcavazos.TestComponents.BaseTest.launchApplication(BaseTest.java:79)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Error Validations Test</h2><h2>Submit Order Test</h2><h3 id="m0">omarcavazos.tests.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=@Test123, product=ZARA COAT 3, email=test969@test.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">omarcavazos.tests.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Iamking@000, product=ADIDAS ORIGINAL, email=shetty@gmail.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

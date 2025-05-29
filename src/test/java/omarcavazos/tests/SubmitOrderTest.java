@@ -1,15 +1,9 @@
 package omarcavazos.tests;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
-import org.apache.commons.io.FileUtils;
-import org.bouncycastle.jcajce.provider.symmetric.Serpent.TSerpentGMAC;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -34,7 +28,7 @@ public class SubmitOrderTest extends BaseTest {
 
 		// CartPage
 		CartPage cartPage = productCatalogue.goToCartPage();
-		Boolean match = cartPage.VerifyProductDisplay(input.get("product"));
+		Boolean match = cartPage.VerifyProductDisplay(input.get("product"));		
 		Assert.assertTrue(match);
 
 		// CheckoutPage
