@@ -20,13 +20,13 @@ public class CheckOutPage extends AbstractComponent{
 	}
 
 	@FindBy (css = ".action__submit")
-	WebElement submit;
+	private WebElement submit;
 	
 	@FindBy (css = "[placeholder='Select Country']")
-	WebElement country;
+	private WebElement country;
 
 	@FindBy(xpath = "//button[contains(@class,'ta-item')][1]")
-	WebElement selectCountry;
+	private WebElement selectCountry;
 	
 	By results = By.cssSelector(".ta-results");
 			

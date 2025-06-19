@@ -67,6 +67,20 @@
 			<version>5.1.2</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>7.23.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>7.23.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<profiles>
@@ -109,6 +123,30 @@
 				</pluginManagement>
 			</build>
 		</profile>
+		
+		<profile>
+				<id>CucumberTests</id>
+						
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.5.3</version>
+							<configuration>
+								<includes>
+									<include>
+										**/TestNGTestRunner.java
+									</include>
+								</includes>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+
+		</profile>
 
 		<profile>
 			<id>ErrorValidation</id>
@@ -129,8 +167,9 @@
 					</plugins>
 				</pluginManagement>
 			</build>
-
 		</profile>
+		
+
 	</profiles>
 
 
@@ -166,10 +205,10 @@
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.13.0</version>
 				</plugin>
-<!--				<plugin>-->
-<!--					<artifactId>maven-surefire-plugin</artifactId>-->
-<!--					<version>3.3.0</version>-->
-<!--				</plugin>-->
+				<!--				<plugin>-->
+				<!--					<artifactId>maven-surefire-plugin</artifactId>-->
+				<!--					<version>3.3.0</version>-->
+				<!--				</plugin>-->
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>
 					<version>3.4.2</version>

@@ -46,7 +46,10 @@ public class AbstractComponent {
 
 	public CartPage goToCartPage() {
 		// driver.findElement(By.cssSelector("[routerlink*='cart']")).click();
-		cartHeader.click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(cartHeader)).click();
+
+		//cartHeader.click();
 		CartPage cartPage = new CartPage(driver);
 		return cartPage;
 	}

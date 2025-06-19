@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="omarcavazos.tests.SubmitOrderTest">
+      <class name="cucumber.TestNGTestRunner">
         <methods>
-          <include name="tearDown"/>
-          <include name="launchApplication"/>
-          <include name="submitOrder"/>
-          <include name="OrderHistoryTest"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
         </methods>
-      </class> <!-- omarcavazos.tests.SubmitOrderTest -->
+      </class> <!-- cucumber.TestNGTestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
